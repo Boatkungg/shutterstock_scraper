@@ -1,0 +1,5 @@
+{
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "aiXcoder.showTrayIcon": true,
+    "python.terminal.activateEnvironment": false
+}

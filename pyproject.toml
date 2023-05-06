@@ -1,0 +1,18 @@
+[project]
+name = "shutterstock-scraper"
+version = "0.1.0"
+description = "easy shutterstock image scraper"
+authors = [
+    { name = "B_K", email = "60977054+l3oatkunGG@users.noreply.github.com" }
+]
+dependencies = ["selenium~=4.9.0", "webdriver-manager~=3.8.6"]
+readme = "README.md"
+requires-python = ">= 3.10"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
