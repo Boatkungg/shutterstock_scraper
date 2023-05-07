@@ -22,10 +22,7 @@ for i in range(1, pages + 1):
     driver.get(str(link).join(f"&page={i}") if str(link).find("?") else str(link).join(f"?page={i}"))
     print(f"Page {i} loaded")
 
-    # scroll to bottom
-    #driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
-    # wait for images to load
+    # wait for site to load
     driver.implicitly_wait(5)
 
     thumbnails = driver.find_elements(by=By.XPATH, value="//*[contains(@class, 'mui-') and contains(@class, '-thumbnail')]")
