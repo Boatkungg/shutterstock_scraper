@@ -30,5 +30,6 @@ for i in range(1, pages + 1):
     for i in thumbnails:
         img_link = i.get_property("src")
         print(f"Downloading image {img_link}")
+        os.makedirs(SAVE_PATH, exist_ok=True)
         urllib.request.urlretrieve(img_link, os.path.join(SAVE_PATH, f"{image}.jpg"))
         image += 1
