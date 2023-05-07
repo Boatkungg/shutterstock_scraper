@@ -32,7 +32,12 @@ https://www.shutterstock.com/search/dog?channel=nooffset&mreleased=true
 
 6. and you may also change how many page you want at [line 17](https://github.com/l3oatkungg/shutterstock_scraper/blob/3d8421cd75ee896c307ecdcf2fbb92454534da3e/main.py#L17)
 
-7. and the program will do it's job
+7. run the program
+```
+python main.py
+```
+
+and the program will do it's job
 
 ---
 
