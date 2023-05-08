@@ -16,10 +16,11 @@ SAVE_PATH = "images"
 link = "" # shutterstock search link
 pages = 10
 
-
+start_from = 1
 image = 1
-for i in range(1, pages + 1):
-    driver.get(str(link).join(f"&page={i}") if str(link).find("?") else str(link).join(f"?page={i}"))
+for i in range(start_from, start_from + pages + 1):
+    url = f"{link}&page={i}" if "?" in link else f"{link}?page={i}"
+    driver.get(url)
     print(f"Page {i} loaded")
 
     # wait for site to load
